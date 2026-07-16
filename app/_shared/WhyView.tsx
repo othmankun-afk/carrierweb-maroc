@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CTASection from "../components/CTASection";
+import WPContent from "../components/WPContent";
 import Link from "next/link";
 import { Cpu, Wifi, Shield, Server, Check, ChevronRight } from "lucide-react";
 import { getDict } from "@/lib/dictionaries";
@@ -13,7 +14,16 @@ const specIcons = [
   <Server key="se" className="w-7 h-7" />,
 ];
 
-export default function WhyView({ locale }: { locale: Locale }) {
+// `wpHtml` : contenu Gutenberg de la page WordPress `pourquoi-carrierweb`
+// (fr uniquement — voir lib/wp-pages.ts). S'il est présent, il remplace le
+// corps codé en dur ; sinon la vue rend le contenu des dictionnaires.
+export default function WhyView({
+  locale,
+  wpHtml,
+}: {
+  locale: Locale;
+  wpHtml?: string | null;
+}) {
   const dict = getDict(locale);
   const t = dict.whyPage;
   const lp = (p: string) => localizePath(locale, p);
@@ -51,6 +61,12 @@ export default function WhyView({ locale }: { locale: Locale }) {
           </div>
         </section>
 
+        {wpHtml ? (
+          <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+            <WPContent html={wpHtml} />
+          </section>
+        ) : (
+          <>
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
           <div className="text-center mb-10">
             <h2 className="text-xl sm:text-2xl font-bold text-cw-fg font-[family-name:var(--font-jakarta)]">{t.specsTitle}</h2>
@@ -101,6 +117,8 @@ export default function WhyView({ locale }: { locale: Locale }) {
             </div>
           </div>
         </section>
+          </>
+        )}
 
         <div className="mt-16">
           <CTASection locale={locale} dict={dict} />

@@ -1014,3 +1014,113 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Les nombres et libellés LTR (téléphone, URL de démo…) gardent leur sens. */
 [dir="rtl"] [dir="ltr"] { text-align: inherit; }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   CONTENU GUTENBERG (.wp-content) — pages fixes éditées par blocs dans
+   WordPress (voir lib/wp-pages.ts). WordPress fournit le HTML des blocs
+   cœur ; l'apparence est entièrement définie ici pour rester dans le
+   design du site. Le client peut ajouter/réordonner des blocs sans
+   casser la charte.
+   ═══════════════════════════════════════════════════════════════════════ */
+.wp-content {
+  color: var(--cw-gray-300);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.wp-content > * + * { margin-top: 1rem; }
+
+.wp-content h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--cw-fg);
+  border-left: 3px solid var(--cw-red);
+  padding-left: 0.75rem;
+  margin-top: 2.5rem;
+}
+.wp-content h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--cw-fg);
+  margin-top: 2rem;
+}
+.wp-content h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--cw-red-light);
+  margin-top: 1.5rem;
+}
+.wp-content p { color: var(--cw-gray-300); }
+.wp-content a { color: var(--cw-red-light); text-decoration: underline; text-underline-offset: 3px; }
+.wp-content a:hover { color: var(--cw-fg); }
+.wp-content strong { color: var(--cw-fg); }
+
+.wp-content ul, .wp-content ol { padding-left: 1.25rem; display: grid; gap: 0.5rem; }
+.wp-content ul { list-style: none; }
+.wp-content ul > li { position: relative; padding-left: 1.1rem; }
+.wp-content ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 9999px;
+  background: var(--cw-red-light);
+}
+.wp-content ol { list-style: decimal; }
+.wp-content ol > li::marker { color: var(--cw-red-light); font-weight: 600; }
+
+/* Colonnes Gutenberg : le CSS de WP n'est pas chargé, on refait la grille. */
+.wp-content .wp-block-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.wp-content .wp-block-column {
+  background: var(--cw-surface);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+}
+.wp-content .wp-block-column > h4:first-child,
+.wp-content .wp-block-column > h3:first-child { margin-top: 0; }
+
+.wp-content hr.wp-block-separator {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin: 2.5rem 0;
+}
+
+.wp-content img { max-width: 100%; height: auto; border-radius: 1rem; }
+.wp-content figure { margin: 1.5rem 0; }
+.wp-content figcaption { font-size: 0.75rem; color: var(--cw-gray-500); margin-top: 0.5rem; text-align: center; }
+
+.wp-content blockquote {
+  border-left: 3px solid var(--cw-red);
+  padding-left: 1rem;
+  color: var(--cw-gray-400);
+  font-style: italic;
+}
+
+.wp-content .wp-block-button__link,
+.wp-content .wp-element-button {
+  display: inline-block;
+  background: var(--cw-red);
+  color: #fff;
+  border-radius: 9999px;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.wp-content .wp-block-button__link:hover,
+.wp-content .wp-element-button:hover { background: var(--cw-red-dark); color: #fff; }
+
+/* RTL (par cohérence si un jour du contenu WP est affiché en arabe). */
+[dir="rtl"] .wp-content h2 { border-left: none; border-right: 3px solid var(--cw-red); padding-left: 0; padding-right: 0.75rem; }
+[dir="rtl"] .wp-content ul > li { padding-left: 0; padding-right: 1.1rem; }
+[dir="rtl"] .wp-content ul > li::before { left: auto; right: 0; }

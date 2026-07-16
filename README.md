@@ -14,6 +14,7 @@ The site is fully server-rendered and statically cached, reads its content from 
 - **Runs on ACF's Free edition.** No paid plugins. Repeater-style lists are modelled as numbered flat fields and reassembled in code — see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and [`README-migration.md`](README-migration.md).
 - **Trilingual (FR / AR / EN)** with correct SEO: French at the root, Arabic & English under a prefix, right-to-left for Arabic, and per-page `canonical` + `hreflang`.
 - **Fresh content without redeploys.** Incremental Static Regeneration (60s) means an edit in WordPress goes live within about a minute.
+- **Gutenberg-editable pages.** Fixed pages (starting with *Pourquoi CarrierWeb*) can be edited with WordPress's native block editor; the front end renders the blocks inside the site design, with the usual local fallback (see [`wordpress/README.md`](wordpress/README.md)).
 - **SEO built in.** Generated sitemap & robots, JSON-LD structured data, Open Graph, and Google Search Console verification.
 
 ## Tech stack
