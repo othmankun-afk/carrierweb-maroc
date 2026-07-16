@@ -11,7 +11,7 @@ The site is fully server-rendered and statically cached, reads its content from 
 ## Highlights
 
 - **Headless WordPress, with a safety net.** All content is read through one data layer. If WordPress is down, misconfigured, or errors, the site silently serves local fallback content instead of breaking.
-- **Runs on the *free* ACF.** No paid plugins. Repeater-style lists are modelled as numbered flat fields and reassembled in code — see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and [`README-migration.md`](README-migration.md).
+- **Runs on ACF's Free edition.** No paid plugins. Repeater-style lists are modelled as numbered flat fields and reassembled in code — see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and [`README-migration.md`](README-migration.md).
 - **Trilingual (FR / AR / EN)** with correct SEO: French at the root, Arabic & English under a prefix, right-to-left for Arabic, and per-page `canonical` + `hreflang`.
 - **Fresh content without redeploys.** Incremental Static Regeneration (60s) means an edit in WordPress goes live within about a minute.
 - **SEO built in.** Generated sitemap & robots, JSON-LD structured data, Open Graph, and Google Search Console verification.

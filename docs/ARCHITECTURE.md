@@ -54,6 +54,8 @@ project/
 
 Mental model: **`lib/` is the data + language brain, `app/` is what the user sees.** A route file stays thin and delegates to a shared view.
 
+**Assets.** Images in `public/` come from free-license stock sources cleared for commercial use; the logos and demo video are CarrierWeb brand assets. Final licensed brand imagery can be swapped in before launch without code changes.
+
 ---
 
 ## 3. Content: headless WordPress with an automatic local fallback
@@ -76,6 +78,8 @@ export async function getSolutionBySlug(slug: string): Promise<Solution | null> 
 
 Practical effect: the site **builds and renders with or without WordPress**. You can develop offline, and if the CMS ever goes down in production the site keeps serving the last known content instead of erroring.
 
+**Which WordPress?** The CMS is a *new, purpose-built* headless WordPress provisioned specifically for this site — its custom post types and ACF Free field groups are created to match the GraphQL queries the front end sends (documented field-by-field in `README-migration.md`). It does **not** reuse an existing WordPress theme or content structure, and because of the fallback the front end can be built and previewed before the CMS is even provisioned.
+
 ### The "no-repeater" trick (ACF Free)
 
 ACF Free has no *repeater* field, so a list can't be modelled the usual way. Instead each list is stored as a **fixed set of numbered flat fields** in WordPress — `stat_1_value`, `stat_1_label`, `stat_2_value`, … — and the code reassembles them into arrays, dropping any row the editor left empty:
@@ -95,11 +99,13 @@ const stats = compact([
 ### Content model in WordPress
 
 - **Solutions** and **Sectors** — custom post types, each with an ACF field group.
-- **Testimonials** and **Articles** — custom post types (mu-plugins).
+- **Testimonials** and **Articles** — custom post types registered in code as *must-use plugins* (mu-plugins) that **auto-seed** their launch content on first load. This is deliberate: these two purely editorial types arrive pre-populated with no manual admin setup, yet stay fully editable in WordPress afterwards. The same content lives locally in `lib/mock-data.ts` / `lib/articles.ts` for the fallback path, so the two never drift at launch.
 - **Site settings** — ACF Free has no Options Page, so a single post of a `reglage` CPT (slug `reglages-site`) holds the editable header/footer/hero fields (`lib/site-settings.ts`). Every field is optional and falls back to the dictionary, so the site works before that post even exists.
 - Ordering everywhere follows WordPress's **menu_order** ("Order" field), not publish date, so the editorial order stays stable.
 
 > WordPress only holds the **French** content. Arabic and English come from the dictionaries and local data (see §4), so `ar`/`en` skip WordPress entirely.
+
+**What happens to Arabic/English when French content changes?** Editing or adding French content in WordPress updates the French site within the ISR window (~60s). Arabic and English are maintained in the codebase (dictionaries + local data), so a new WordPress page or a French edit does **not** automatically create or update its AR/EN versions — those are changed deliberately in code. This is a conscious trade-off: the two translated languages stay stable and human-reviewed, rather than partially auto-translated or left half-populated when a new French page appears.
 
 ---
 
