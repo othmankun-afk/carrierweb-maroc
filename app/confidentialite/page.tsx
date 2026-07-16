@@ -37,7 +37,7 @@ const sections = [
   },
   {
     title: "Cookies et stockage local",
-    body: "Le site ne dépose aucun cookie publicitaire ni traceur tiers. Seule votre préférence d'affichage (thème clair ou sombre) est mémorisée localement dans votre navigateur (localStorage) afin de conserver votre choix entre deux visites ; cette information ne quitte pas votre appareil et n'est jamais transmise à nos serveurs. [À valider : lister tout outil de mesure d'audience éventuellement ajouté ultérieurement.]",
+    body: "Le site ne dépose aucun cookie publicitaire ni traceur tiers. Seule votre préférence d'affichage (thème clair ou sombre) est mémorisée localement dans votre navigateur (localStorage) afin de conserver votre choix entre deux visites ; cette information ne quitte pas votre appareil et n'est jamais transmise à nos serveurs.",
   },
   {
     title: "Durée de conservation",
