@@ -1,0 +1,34 @@
+# CarrierWeb Maroc
+
+> CarrierWeb Maroc, filiale du groupe CarrierWeb basée à Casablanca, fournit des solutions de télématique embarquée et de gestion de flotte pour les transporteurs, logisticiens et gestionnaires de flotte au Maroc : suivi GPS en temps réel, gestion du carburant, contrôle de température (chaîne du froid), communication chauffeurs et intégration back-office.
+
+Langue du site : français. Zone desservie : Maroc (support local à Casablanca) et Afrique de l'Ouest/du Nord.
+
+## Solutions
+
+- [Gestion de Flotte](https://www.carrierweb.ma/solutions/gestion-flotte) : analyse d'utilisation, maintenance préventive, optimisation des budgets logistiques.
+- [Suivi GPS Temps Réel](https://www.carrierweb.ma/solutions/suivi-gps) : géolocalisation haute précision au Maroc et cross-border (TIR).
+- [Gestion du Carburant](https://www.carrierweb.ma/solutions/gestion-carburant) : sondes de réservoir, détection des siphonnages, rapports éco-conduite.
+- [Contrôle de Température](https://www.carrierweb.ma/solutions/controle-temperature) : module ReeferMate™ pour la chaîne du froid (transport frigorifique, conformité ONSSA).
+- [Communication Chauffeurs](https://www.carrierweb.ma/solutions/communication-chauffeurs) : terminaux embarqués MDT, messagerie et navigation poids lourds.
+- [Intégration Back-Office](https://www.carrierweb.ma/solutions/integration) : API REST et connecteurs vers ERP/TMS (SAP, Sage…).
+
+## Secteurs
+
+- [Transport de Marchandises (TIR)](https://www.carrierweb.ma/secteurs/transport-routier)
+- [Logistique & Supply Chain](https://www.carrierweb.ma/secteurs/logistique)
+- [BTP & Construction](https://www.carrierweb.ma/secteurs/btp)
+- [Distribution & FMCG](https://www.carrierweb.ma/secteurs/distribution)
+
+## Pages clés
+
+- [Pourquoi CarrierWeb (technologie)](https://www.carrierweb.ma/pourquoi-carrierweb) : matériel propriétaire, connectivité multi-opérateurs, cloud sécurisé.
+- [Contact / Demande de démo](https://www.carrierweb.ma/contact) : téléphone +212 (0)5 22 36 19 88, e-mail info@carrierweb.ma, Casablanca.
+- [Espace Client](https://www.carrierweb.ma/espace-client) : passerelle vers la plateforme de suivi de flotte en temps réel.
+- [Ressources & Guides](https://www.carrierweb.ma/ressources) : guides télématique et gestion de flotte au Maroc.
+
+## Articles
+
+- [Comment réduire la consommation de carburant de vos camions ?](https://www.carrierweb.ma/ressources/reduire-consommation-carburant-camions) : éco-conduite, sondes de carburant, lutte contre le siphonnage, ralenti moteur.
+- [Le transport frigorifique marocain face aux exigences ONSSA et européennes](https://www.carrierweb.ma/ressources/transport-frigorifique-onssa-exigences-europeennes) : loi 28-07, norme EN 12830, HACCP, traçabilité de la chaîne du froid.
+- [Pourquoi connecter votre TMS aux données GPS de votre flotte ?](https://www.carrierweb.ma/ressources/connecter-tms-donnees-gps-flotte) : API REST, webhooks, facturation automatisée, preuve de livraison.
