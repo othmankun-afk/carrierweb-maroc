@@ -19,26 +19,44 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
+const LAST_UPDATED = "16 juillet 2026";
+
 const sections = [
   {
     title: "Éditeur du site",
-    body: "CarrierWeb Maroc, société à responsabilité limitée à associé unique (SARL AU) au capital de 194 900 dirhams, dont le siège social est situé au 39 rue de Normandie, 4ᵉ étage, 20000 Casablanca, Maroc. Téléphone : +212 (0)5 22 36 19 88 — E-mail : info@carrierweb.ma. Immatriculée au Registre de Commerce de Casablanca sous le n° [à compléter] — ICE : [à compléter] — Identifiant fiscal : [à compléter].",
+    body: "Le site www.carrierweb.ma est édité par CarrierWeb Maroc, société à responsabilité limitée à associé unique (SARL AU) au capital social de 194 900 dirhams, dont le siège social est situé au 39 rue de Normandie, 4ᵉ étage, 20000 Casablanca, Maroc. Téléphone : +212 (0)5 22 36 19 88 — E-mail : info@carrierweb.ma. Registre du Commerce de Casablanca n° [à compléter] — Identifiant Commun de l'Entreprise (ICE) : [à compléter] — Identifiant Fiscal (IF) : [à compléter].",
   },
   {
     title: "Directeur de la publication",
-    body: "[À compléter : nom et fonction du directeur de la publication.]",
+    body: "[À compléter : nom et qualité du directeur de la publication.]",
   },
   {
     title: "Hébergement",
-    body: "[À compléter : nom, adresse et coordonnées de l'hébergeur du site — en attente du choix de l'hébergement de production.]",
+    body: "Le site est hébergé par [à compléter : dénomination de l'hébergeur], [adresse complète], [téléphone] — en attente de la confirmation de l'hébergement de production.",
   },
   {
     title: "Activité",
-    body: "Conception, développement et commercialisation de solutions télématiques : systèmes de suivi de véhicules, solutions de gestion de flotte et applications de géolocalisation. CarrierWeb Maroc est la filiale marocaine du groupe CarrierWeb.",
+    body: "CarrierWeb Maroc conçoit, développe et commercialise des solutions télématiques : systèmes de suivi de véhicules, solutions de gestion de flotte et applications de géolocalisation. CarrierWeb Maroc est la filiale marocaine du groupe CarrierWeb.",
   },
   {
     title: "Propriété intellectuelle",
-    body: "L'ensemble des contenus de ce site (textes, visuels, logo CarrierWeb®) est protégé. Toute reproduction sans autorisation écrite préalable est interdite. CarrierWeb® est une marque déposée du groupe CarrierWeb.",
+    body: "L'ensemble des éléments composant ce site (structure, textes, visuels, illustrations, logos et marques) est la propriété exclusive de CarrierWeb Maroc ou de ses partenaires, et est protégé par la législation marocaine et internationale relative à la propriété intellectuelle. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation écrite préalable, est interdite et constitue une contrefaçon. CarrierWeb® est une marque déposée du groupe CarrierWeb.",
+  },
+  {
+    title: "Responsabilité",
+    body: "CarrierWeb Maroc s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site, sans pouvoir en garantir l'exhaustivité ou l'absence totale d'erreurs. L'éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l'accès au site ou de son utilisation, ni d'une éventuelle indisponibilité temporaire du service.",
+  },
+  {
+    title: "Liens hypertextes",
+    body: "Ce site peut contenir des liens vers des sites tiers. CarrierWeb Maroc n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leurs pratiques ou leur politique de confidentialité. La présence d'un lien ne vaut pas approbation de son contenu.",
+  },
+  {
+    title: "Données personnelles",
+    body: "Les traitements de données à caractère personnel réalisés via ce site (notamment le formulaire de contact) sont décrits dans notre Politique de Confidentialité, accessible depuis le pied de page ou à l'adresse /confidentialite.",
+  },
+  {
+    title: "Droit applicable et juridiction",
+    body: "Les présentes mentions légales sont régies par le droit marocain. Tout litige relatif à l'utilisation du site, à défaut de résolution amiable, relève de la compétence exclusive des tribunaux de Casablanca.",
   },
 ];
 
@@ -58,7 +76,7 @@ export default function MentionsLegales() {
             Mentions Légales
           </h1>
           <p className="text-cw-gray-500 text-xs mb-10">
-            Restent à compléter avant mise en production : n° RC, ICE, identifiant fiscal, directeur de la publication et hébergeur.
+            Dernière mise à jour : {LAST_UPDATED}
           </p>
 
           <div className="space-y-6">

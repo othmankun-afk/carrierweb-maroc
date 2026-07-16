@@ -16,34 +16,52 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
+const LAST_UPDATED = "16 juillet 2026";
+
 const sections = [
   {
+    title: "Préambule",
+    body: "CarrierWeb Maroc accorde une importance particulière à la protection de votre vie privée et de vos données à caractère personnel. La présente politique explique quelles données sont collectées via le site www.carrierweb.ma, dans quel but, pendant combien de temps, et quels sont vos droits. Elle est conforme à la loi marocaine n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel.",
+  },
+  {
     title: "Responsable du traitement",
-    body: "CarrierWeb Maroc, SARL à associé unique, 39 rue de Normandie, 4ᵉ étage, 20000 Casablanca, Maroc, est responsable des traitements de données à caractère personnel réalisés via ce site.",
+    body: "Le responsable des traitements de données à caractère personnel réalisés via ce site est CarrierWeb Maroc, SARL à associé unique, dont le siège social est situé au 39 rue de Normandie, 4ᵉ étage, 20000 Casablanca, Maroc.",
   },
   {
     title: "Données collectées",
-    body: "Le formulaire de contact transmet votre demande par e-mail à info@carrierweb.ma (nom, entreprise, e-mail, téléphone, taille de flotte, message). Ces données ne sont pas enregistrées dans une base de données du site. Le site ne dépose pas de cookies de suivi publicitaire ; seule votre préférence de thème (clair/sombre) est mémorisée localement dans votre navigateur, sans transmission à nos serveurs. [À valider : lister tout outil d'analyse d'audience ajouté ultérieurement.]",
+    body: "Le formulaire de contact recueille les informations que vous nous transmettez volontairement : nom, entreprise, adresse e-mail, téléphone, taille de flotte et contenu de votre message. Ces données sont transmises par e-mail à info@carrierweb.ma et ne sont pas enregistrées dans une base de données du site. Aucune donnée sensible n'est demandée.",
   },
   {
     title: "Finalité du traitement",
-    body: "Les informations transmises servent exclusivement à répondre à votre demande commerciale ou de support et à établir, le cas échéant, une proposition adaptée à votre flotte. Elles ne sont ni revendues ni communiquées à des tiers, et ne font l'objet d'aucune prospection automatisée.",
+    body: "Les informations transmises servent exclusivement à répondre à votre demande commerciale ou de support et à établir, le cas échéant, une proposition adaptée à votre flotte. Elles ne sont ni vendues, ni louées, ni communiquées à des tiers, et ne font l'objet d'aucune prospection automatisée.",
+  },
+  {
+    title: "Cookies et stockage local",
+    body: "Le site ne dépose aucun cookie publicitaire ni traceur tiers. Seule votre préférence d'affichage (thème clair ou sombre) est mémorisée localement dans votre navigateur (localStorage) afin de conserver votre choix entre deux visites ; cette information ne quitte pas votre appareil et n'est jamais transmise à nos serveurs. [À valider : lister tout outil de mesure d'audience éventuellement ajouté ultérieurement.]",
   },
   {
     title: "Durée de conservation",
-    body: "Les demandes reçues par e-mail sont conservées le temps du traitement commercial de la demande, puis archivées ou supprimées conformément aux durées légales applicables aux documents commerciaux au Maroc.",
+    body: "Les demandes reçues par e-mail sont conservées le temps nécessaire à leur traitement commercial, puis archivées ou supprimées conformément aux durées légales applicables aux documents commerciaux au Maroc.",
+  },
+  {
+    title: "Sécurité des données",
+    body: "CarrierWeb Maroc met en œuvre des mesures techniques et organisationnelles appropriées afin de protéger vos données contre toute perte, altération, divulgation ou accès non autorisé. Les échanges avec le site sont chiffrés via le protocole HTTPS.",
   },
   {
     title: "Conformité à la loi 09-08 et déclaration CNDP",
-    body: "Conformément à la loi n° 09-08 du 18 février 2009 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, les traitements liés à ce site font l'objet d'une déclaration préalable auprès de la Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP). Récépissé de déclaration n° [à compléter — dossier en cours de dépôt]. Pour en savoir plus sur vos droits : www.cndp.ma.",
+    body: "Conformément à la loi n° 09-08 du 18 février 2009, les traitements liés à ce site font l'objet d'une déclaration préalable auprès de la Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP). Récépissé de déclaration n° [à compléter — dossier en cours de dépôt]. Pour en savoir plus : www.cndp.ma.",
   },
   {
     title: "Vos droits (accès, rectification, opposition)",
     body: "Conformément aux articles 7 à 9 de la loi 09-08, vous disposez d'un droit d'accès, de rectification et d'opposition sur les données vous concernant. Vous pouvez exercer ces droits à tout moment en écrivant à info@carrierweb.ma ou par courrier à l'adresse du siège (39 rue de Normandie, 4ᵉ étage, 20000 Casablanca), en joignant un justificatif d'identité. Une réponse vous sera apportée dans les meilleurs délais. Vous pouvez également saisir la CNDP de toute réclamation.",
   },
   {
+    title: "Modification de la politique",
+    body: "La présente politique de confidentialité peut être amenée à évoluer, notamment pour tenir compte de changements légaux ou techniques. Toute modification prend effet dès sa publication sur cette page ; la date de dernière mise à jour figure en haut de ce document.",
+  },
+  {
     title: "Contact",
-    body: "Pour toute question relative à vos données personnelles : info@carrierweb.ma ou +212 (0)5 22 36 19 88.",
+    body: "Pour toute question relative à la protection de vos données personnelles : info@carrierweb.ma ou +212 (0)5 22 36 19 88.",
   },
 ];
 
@@ -63,7 +81,7 @@ export default function Confidentialite() {
             Politique de Confidentialité
           </h1>
           <p className="text-cw-gray-500 text-xs mb-10">
-            Reste à compléter avant mise en production : numéro de récépissé de la déclaration CNDP.
+            Dernière mise à jour : {LAST_UPDATED}
           </p>
 
           <div className="space-y-6">
