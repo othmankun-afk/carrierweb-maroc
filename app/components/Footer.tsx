@@ -126,6 +126,11 @@ export default async function Footer({ locale, dict }: { locale: Locale; dict: D
                 </Link>
               </li>
               <li>
+                <Link href={lp("/references")} className="hover:text-cw-fg transition-colors">
+                  {t.navReferences}
+                </Link>
+              </li>
+              <li>
                 <Link href={lp("/secteurs")} className="hover:text-cw-fg transition-colors">
                   {t.navSectors}
                 </Link>

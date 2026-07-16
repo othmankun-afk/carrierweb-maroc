@@ -92,6 +92,7 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
       children: sectorHrefs.map((href, i) => ({ label: t.sectorItems[i], href })),
     },
     { key: "why", label: t.nav.why, href: "/pourquoi-carrierweb" },
+    { key: "references", label: t.nav.references, href: "/references" },
     { key: "resources", label: t.nav.resources, href: "/ressources" },
     { key: "contact", label: t.nav.contact, href: "/contact" },
   ];

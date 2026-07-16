@@ -39,6 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/solutions", "weekly", 0.9],
     ["/secteurs", "weekly", 0.9],
     ["/pourquoi-carrierweb", "monthly", 0.7],
+    ["/references", "monthly", 0.7],
     ["/ressources", "weekly", 0.6],
     ["/contact", "yearly", 0.8],
     ["/espace-client", "yearly", 0.5],

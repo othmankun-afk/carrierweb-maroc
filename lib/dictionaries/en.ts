@@ -45,6 +45,11 @@ const en: Dictionary = {
       description:
         "Practical guides and analyses on telematics in Morocco: fuel savings, ONSSA cold chain compliance, TMS/ERP integration.",
     },
+    references: {
+      title: "References & Experience in Morocco — CarrierWeb",
+      description:
+        "500+ fleets supported in Morocco, installation teams and 24/7 support in Casablanca, TIR, ONSSA cold-chain and distribution expertise: discover our local presence.",
+    },
     contact: {
       title: "Contact & Demo Request",
       description:
@@ -73,6 +78,7 @@ const en: Dictionary = {
       solutions: "Solutions",
       sectors: "Industries",
       why: "Why us",
+      references: "References",
       resources: "Resources",
       contact: "Contact",
     },
@@ -109,6 +115,7 @@ const en: Dictionary = {
     allSolutions: "All solutions →",
     navTitle: "Navigation",
     navWhy: "Why CarrierWeb",
+    navReferences: "References & Experience",
     navSectors: "Industries",
     navResources: "Resources & Guides",
     navContact: "Contact us",
@@ -375,6 +382,40 @@ const en: Dictionary = {
       { title: "Open API", desc: "Easily connect our trip and temperature data to SAP, Sage or your TMS." },
       { title: "Local support", desc: "Benefit from our assistance technicians based in Casablanca." },
     ],
+  },
+
+  referencesPage: {
+    breadcrumb: "References",
+    label: "Local Presence",
+    h1: "Our references & experience in Morocco",
+    tagline:
+      "More than a supplier: a telematics partner based in Casablanca, with first-hand knowledge of Moroccan roads, corridors and transport constraints.",
+    metrics: [
+      { val: "15 yrs", label: "Of telematics experience", desc: "Serving transport fleets" },
+      { val: "500+", label: "Fleets supported", desc: "From international TIR to urban distribution" },
+      { val: "24/7", label: "Local support", desc: "Technicians and customer service in Casablanca" },
+    ],
+    presenceTitle: "A real local operation, not just a sales office",
+    presenceP1:
+      "CarrierWeb Maroc is the Moroccan subsidiary of the CarrierWeb group. Our sales and technical teams are based in Casablanca: device installation, fuel-probe calibration and day-to-day support are all handled locally, in our workshops or directly at your depots.",
+    presenceP2:
+      "That proximity makes the difference every day: hardware replaced within 24 hours, a contact who knows your routes (Casablanca–Tanger Med, TIR corridors to Europe), and a platform connected to all three Moroccan mobile networks (IAM, Orange, Inwi) for maximum territorial coverage.",
+    checks: [
+      "Installation and support teams based in Casablanca",
+      "On-site interventions at your depots, anywhere in Morocco",
+      "Multi-operator GSM coverage (IAM, Orange, Inwi)",
+      "Cross-border TIR tracking Morocco – Europe",
+    ],
+    sideTitle: "Our coverage",
+    sideBlocks: [
+      { title: "Casablanca — HQ & workshops", desc: "Management, customer service and hardware preparation at 39 rue de Normandie." },
+      { title: "Nationwide interventions", desc: "Scheduled installations and maintenance at your depots, across the country." },
+      { title: "TIR & export corridors", desc: "Continuous Morocco – Europe tracking: Tanger Med and the Spanish and French routes." },
+      { title: "CarrierWeb group", desc: "Backed by an international telematics group and its hardware R&D." },
+    ],
+    refsTitle: "Active references in every key sector",
+    refsDesc:
+      "Road transport, cold chain, supply chain: Moroccan fleets of every size run on CarrierWeb daily.",
   },
 
   resources: {

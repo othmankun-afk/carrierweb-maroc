@@ -46,6 +46,11 @@ const fr = {
       description:
         "Guides pratiques et analyses sur la télématique au Maroc : réduction du carburant, chaîne du froid ONSSA, intégration TMS/ERP.",
     },
+    references: {
+      title: "Références & Expérience au Maroc — CarrierWeb",
+      description:
+        "500+ flottes accompagnées au Maroc, équipes d'installation et support 24h/7 à Casablanca, expertise TIR, chaîne du froid ONSSA et distribution : découvrez notre présence locale.",
+    },
     contact: {
       title: "Contact & Demande de Démo",
       description:
@@ -74,6 +79,7 @@ const fr = {
       solutions: "Solutions",
       sectors: "Secteurs",
       why: "Pourquoi nous",
+      references: "Références",
       resources: "Ressources",
       contact: "Contact",
     },
@@ -110,6 +116,7 @@ const fr = {
     allSolutions: "Toutes les solutions →",
     navTitle: "Navigation",
     navWhy: "Pourquoi CarrierWeb",
+    navReferences: "Références & Expérience",
     navSectors: "Secteurs d'Activité",
     navResources: "Ressources & Guides",
     navContact: "Contactez-nous",
@@ -376,6 +383,40 @@ const fr = {
       { title: "API ouverte", desc: "Connectez facilement nos données de trajet et température à SAP, Sage ou votre TMS." },
       { title: "Support de proximité", desc: "Bénéficiez de la présence de nos équipes de techniciens d'assistance à Casablanca." },
     ],
+  },
+
+  referencesPage: {
+    breadcrumb: "Références",
+    label: "Présence Locale",
+    h1: "Nos références & notre expérience au Maroc",
+    tagline:
+      "Plus qu'un fournisseur : un partenaire télématique implanté à Casablanca, qui connaît le terrain, les axes et les contraintes du transport marocain.",
+    metrics: [
+      { val: "15 ans", label: "D'expérience télématique", desc: "Au service des flottes de transport" },
+      { val: "500+", label: "Flottes accompagnées", desc: "Du TIR international à la distribution urbaine" },
+      { val: "24h/7", label: "Support de proximité", desc: "Techniciens et service client à Casablanca" },
+    ],
+    presenceTitle: "Une implantation réelle, pas une simple représentation",
+    presenceP1:
+      "CarrierWeb Maroc est la filiale marocaine du groupe CarrierWeb. Nos équipes commerciales et techniques sont basées à Casablanca : l'installation des boîtiers, le calibrage des sondes carburant et le support quotidien sont assurés localement, dans nos ateliers ou directement dans vos dépôts.",
+    presenceP2:
+      "Cette proximité fait la différence au quotidien : un matériel remplacé sous 24 heures, un interlocuteur qui connaît vos axes (Casablanca–Tanger Med, corridors TIR vers l'Europe) et une plateforme connectée aux réseaux des trois opérateurs marocains (IAM, Orange, Inwi) pour une couverture maximale du territoire.",
+    checks: [
+      "Équipes d'installation et de support basées à Casablanca",
+      "Interventions dans vos dépôts, partout au Maroc",
+      "Couverture GSM multi-opérateurs (IAM, Orange, Inwi)",
+      "Suivi cross-border TIR Maroc – Europe",
+    ],
+    sideTitle: "Notre couverture",
+    sideBlocks: [
+      { title: "Casablanca — siège & ateliers", desc: "Direction, service client et préparation du matériel au 39 rue de Normandie." },
+      { title: "Interventions nationales", desc: "Installations et maintenance planifiées dans vos dépôts, sur tout le territoire." },
+      { title: "Corridors TIR & export", desc: "Suivi continu Maroc – Europe : Tanger Med et axes espagnols et français." },
+      { title: "Groupe CarrierWeb", desc: "L'appui d'un groupe télématique international et de sa R&D matérielle." },
+    ],
+    refsTitle: "Des références actives dans chaque secteur clé",
+    refsDesc:
+      "Transport routier, chaîne du froid, supply chain : des flottes marocaines de toutes tailles utilisent CarrierWeb au quotidien.",
   },
 
   resources: {
