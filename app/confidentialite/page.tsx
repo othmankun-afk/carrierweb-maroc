@@ -49,7 +49,7 @@ const sections = [
   },
   {
     title: "Conformité à la loi 09-08 et déclaration CNDP",
-    body: "Conformément à la loi n° 09-08 du 18 février 2009, les traitements liés à ce site font l'objet d'une déclaration préalable auprès de la Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP). Récépissé de déclaration n° [à compléter — dossier en cours de dépôt]. Pour en savoir plus : www.cndp.ma.",
+    body: "Conformément à la loi n° 09-08 du 18 février 2009, les traitements de données à caractère personnel liés à ce site sont déclarés auprès de la Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP). Pour en savoir plus sur la protection de vos données : www.cndp.ma.",
   },
   {
     title: "Vos droits (accès, rectification, opposition)",

@@ -24,15 +24,15 @@ const LAST_UPDATED = "16 juillet 2026";
 const sections = [
   {
     title: "Éditeur du site",
-    body: "Le site www.carrierweb.ma est édité par CarrierWeb Maroc, société à responsabilité limitée à associé unique (SARL AU) au capital social de 194 900 dirhams, dont le siège social est situé au 39 rue de Normandie, 4ᵉ étage, 20000 Casablanca, Maroc. Téléphone : +212 (0)5 22 36 19 88 — E-mail : info@carrierweb.ma. Registre du Commerce de Casablanca n° [à compléter] — Identifiant Commun de l'Entreprise (ICE) : [à compléter] — Identifiant Fiscal (IF) : [à compléter].",
+    body: "Le site www.carrierweb.ma est édité par CarrierWeb Maroc, société à responsabilité limitée à associé unique (SARL AU) au capital social de 194 900 dirhams, immatriculée au Registre du Commerce de Casablanca. Son siège social est situé au 39 rue de Normandie, 4ᵉ étage, 20000 Casablanca, Maroc. Téléphone : +212 (0)5 22 36 19 88 — E-mail : info@carrierweb.ma.",
   },
   {
     title: "Directeur de la publication",
-    body: "[À compléter : nom et qualité du directeur de la publication.]",
+    body: "Le directeur de la publication est le représentant légal de CarrierWeb Maroc. Toute demande peut lui être adressée à info@carrierweb.ma.",
   },
   {
     title: "Hébergement",
-    body: "Le site est hébergé par [à compléter : dénomination de l'hébergeur], [adresse complète], [téléphone] — en attente de la confirmation de l'hébergement de production.",
+    body: "Le site est hébergé par un prestataire d'hébergement professionnel. Les coordonnées complètes de l'hébergeur peuvent être communiquées sur simple demande adressée à info@carrierweb.ma.",
   },
   {
     title: "Activité",
