@@ -22,11 +22,11 @@ type ContactPayload = {
   message?: string;
 };
 
-function isEmail(value: string): boolean {
+export function isEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-function escapeHtml(value: string): string {
+export function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")

@@ -98,7 +98,7 @@ export async function fetchGraphQL<T>(
 // Patricia actually typed, not on the defaults we backfill afterwards.
 // `value` is the row that gets kept in the final array once it passes the
 // emptiness check.
-function compact<T extends Record<string, unknown>>(
+export function compact<T extends Record<string, unknown>>(
   rows: { raw: Record<string, unknown>; value: T }[]
 ): T[] {
   return rows
@@ -112,7 +112,7 @@ function compact<T extends Record<string, unknown>>(
 // even when a single choice is selected. Unwrap to the plain string key our
 // icon-map expects; `null`/`[]` fall through to the provided default.
 type WPSelect = string | string[] | null | undefined;
-function selectValue(v: WPSelect, fallback: string): string {
+export function selectValue(v: WPSelect, fallback: string): string {
   const raw = Array.isArray(v) ? v[0] : v;
   return raw && raw !== "" ? raw : fallback;
 }

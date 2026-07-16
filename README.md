@@ -43,6 +43,21 @@ npm run build && npm run start     # production build
 npm run lint                       # eslint
 ```
 
+## Tests
+
+Unit tests run with [Vitest](https://vitest.dev):
+
+```bash
+npm test          # run once
+npm run test:watch
+```
+
+They cover the pure logic that's easy to get subtly wrong and double as living documentation:
+
+- **i18n** (`lib/__tests__/i18n.test.ts`) — locale prefixing, `stripLocale`, and the `canonical` + `hreflang` alternates.
+- **Data layer** (`lib/__tests__/wordpress.test.ts`) — the `compact()` reassembly of ACF-Free numbered fields, `selectValue()`, and the **automatic fallback to local content** when WordPress is absent.
+- **Contact form** (`app/api/contact/__tests__/validation.test.ts`) — email validation and HTML escaping.
+
 ## Project structure
 
 ```
